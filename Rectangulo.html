@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo del Área del Triángulo</title>
+    <title>Cálculo del Área del Rectángulo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffebcd;
+            background-color: #e0ffff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -39,7 +39,7 @@
 
         button {
             padding: 10px 20px;
-            background-color: #ff5733;
+            background-color: #008CBA;
             color: white;
             border: none;
             border-radius: 4px;
@@ -48,7 +48,7 @@
         }
 
         button:hover {
-            background-color: #e64a19;
+            background-color: #007B9E;
         }
 
         p {
@@ -58,24 +58,24 @@
         }
     </style>
     <script>
-        function calcularAreaTriangulo() {
-            var base = parseFloat(document.getElementById('baseTriangulo').value);
-            var altura = parseFloat(document.getElementById('alturaTriangulo').value);
-            var area = (base * altura) / 2;
-            document.getElementById('resultadoTriangulo').innerText = 'Área del triángulo: ' + area;
+        function calcularAreaRectangulo() {
+            var base = parseFloat(document.getElementById('baseRectangulo').value);
+            var altura = parseFloat(document.getElementById('alturaRectangulo').value);
+            var area = base * altura;
+            document.getElementById('resultadoRectangulo').innerText = 'Área del rectángulo: ' + area;
         }
     </script>
 </head>
 <body>
     <div class="container">
-        <h1>Área del Triángulo</h1>
-        <label for="baseTriangulo">Base del triángulo:</label>
-        <input type="number" id="baseTriangulo" placeholder="Introduce la base">
+        <h1>Área del Rectángulo</h1>
+        <label for="baseRectangulo">Base del rectángulo:</label>
+        <input type="number" id="baseRectangulo" placeholder="Introduce la base">
         <br>
-        <label for="alturaTriangulo">Altura del triángulo:</label>
-        <input type="number" id="alturaTriangulo" placeholder="Introduce la altura">
-        <button onclick="calcularAreaTriangulo()">Calcular</button>
-        <p id="resultadoTriangulo"></p>
+        <label for="alturaRectangulo">Altura del rectángulo:</label>
+        <input type="number" id="alturaRectangulo" placeholder="Introduce la altura">
+        <button onclick="calcularAreaRectangulo()">Calcular</button>
+        <p id="resultadoRectangulo"></p>
     </div>
 </body>
 </html>
